@@ -1,8 +1,15 @@
-export default function a(){
+import background from "./background/main.js"
+import slogan from "./slogan/main.js"
+import whatsapp from "./whatsapp/main.js"
+import arrow from "./arrow/main.js"
+
+export default function home(){
     let style = `
         {
+            position:relative;
+
             display:flex;
-            flex-direction:row;
+            flex-direction:column;
             align-items:center;
             justify-content:center;
             height:100svh;
@@ -12,7 +19,10 @@ export default function a(){
             font-size:22px;
         }`
 
-    const a = cE("div", style)
-    a.innerHTML = "Ainda não feito"
-    return(a)
+    const home = cE("div", style)
+    home.appendChild(background())
+    home.appendChild(slogan())
+    home.appendChild(whatsapp())
+    home.appendChild(arrow())
+    return(home)
 }
