@@ -1,18 +1,23 @@
-export default function a(){
+import about from "./about/main.js"
+import team from "./team/main.js"
+
+export default function about_(){
     let style = `
         {
             display:flex;
             flex-direction:row;
-            align-items:center;
             justify-content:center;
-            height:100svh;
+            align-items:center;
             width:100%;
-            background:rgb(200,200,200);
-            color:rgb(0,0,0);
-            font-size:22px;
+            margin:25dvh 0px;
+        }
+        :responsive{
+            flex-direction:column;
+            padding:20px;
         }`
-
-    const a = cE("div", style)
-    a.innerHTML = "Ainda não feito"
-    return(a)
+    
+    const about_ = cE("div", style)
+    about_.appendChild(about())
+    about_.appendChild(team())
+    return(about_)
 }
