@@ -1,0 +1,32 @@
+import photo from "./photo/main.js"
+
+export default function team(){
+    let style = `
+        {
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            width:20%;
+            margin:0px 0px 0px 40px;
+        }
+        :responsive{
+            width:100%;
+            margin:0px;
+        }`
+
+    const team = cE("div", style)
+    team.id = "equipe"
+    let srcs = ["./assets/logo.jpg",
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            "./assets/logo.jpg",
+            undefined,
+            "./assets/logo.jpg",
+            undefined
+        ]
+    for(let i = 0; i < srcs.length; i++){team.appendChild(photo(srcs[i]))}
+    return(team)
+}

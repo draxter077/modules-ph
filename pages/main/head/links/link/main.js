@@ -2,13 +2,13 @@ export default function link(t, href){
     let style = `
         {
             font-size:18px;
-            color:rgb(0,0,0);
-            padding:0px 10px;
+            color:rgb(255,255,255);
+            margin:0px 20px;
             cursor:pointer;
             transition:transform 0.5s;
         }
         :hover{
-            transform:translateY(-30%);
+            transform:translateY(-25%);
         }`
 
     const link = cE("div", style)

@@ -22,5 +22,17 @@ export default function head(){
     const head = cE("div", style)
     head.appendChild(logo())
     head.appendChild(links())
+
+    window.addEventListener(
+        "scroll",
+        () => {
+            if(window.scrollY > 0.25*(window.innerHeight)){
+                head.style.background = "rgb(0,0,0)"
+            }
+            else if(window.scrollY < 0.25*(window.innerHeight)){
+                head.style.background = "none"
+            }
+        }
+    )
     return(head)
 }
