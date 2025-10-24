@@ -7,11 +7,9 @@ export default function foot(){
             justify-content:center;
             width:100%;
             color:var(--colorWhite);
-            background:var(--colorOrange);
-            box-shadow:0px 0px 2px 0px var(--colorOrange);
-            padding:10px 0px;
+            background:rgb(0,0,0);
+            padding:7.5svh 0px;
             font-size:17px;
-            margin:7.5vh 0px 0px 0px;
         }
         >a>img{
             height:28px;
@@ -30,6 +28,7 @@ export default function foot(){
         }`
 
     const foot = cE("div", style)
-    foot.innerHTML = "Desenvolvido por <a target='_blank' href='https://www.ph.net.br'><img src='https://www.ph.net.br/assets/logo.jpg' /></a> <span>•</span> Todos os direitos reservados"
+    let d = new Date()
+    foot.innerHTML = `Desenvolvido por <a target='_blank' href='https://www.ph.net.br'><img src='https://www.ph.net.br/assets/logo.jpg' /></a> <span>•</span> ${window.location.href} © ${d.getFullYear()} Todos os direitos reservados`
     return(foot)
 }

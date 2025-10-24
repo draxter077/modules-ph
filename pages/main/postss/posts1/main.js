@@ -1,18 +1,20 @@
-export default function a(){
+import title from "./title/main.js"
+import content from "./content/main.js"
+
+export default function posts(){
     let style = `
         {
             display:flex;
-            flex-direction:row;
+            flex-direction:column;
             align-items:center;
-            justify-content:center;
-            height:100svh;
-            width:100%;
-            background:rgb(200,200,200);
-            color:rgb(0,0,0);
-            font-size:22px;
-        }`
+            width:20%;
+            margin:150px 0px 0px;
+        }
+        :responsive{width:95%;padding:10px;}`
 
-    const a = cE("div", style)
-    a.innerHTML = "Ainda não feito"
-    return(a)
+    const posts = cE("div", style)
+    posts.id = "posts"
+    posts.appendChild(title())
+    posts.appendChild(content())
+    return(posts)
 }

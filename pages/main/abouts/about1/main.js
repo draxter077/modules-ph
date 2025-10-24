@@ -9,7 +9,8 @@ export default function about_(){
             justify-content:center;
             align-items:center;
             width:100%;
-            margin:25dvh 0px;
+            background:rgb(0,0,0);
+            padding:150px 0px 0px;
         }
         :responsive{
             flex-direction:column;
@@ -17,6 +18,7 @@ export default function about_(){
         }`
     
     const about_ = cE("div", style)
+    about_.id = "about"
     about_.appendChild(about())
     about_.appendChild(team())
     return(about_)

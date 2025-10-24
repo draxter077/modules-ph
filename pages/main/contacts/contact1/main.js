@@ -1,18 +1,21 @@
-export default function a(){
+import schedule from "./schedule/main.js"
+import title from "./title/main.js"
+import content from "./content/main.js"
+
+export default function contact(){
     let style = `
         {
             display:flex;
-            flex-direction:row;
+            flex-direction:column;
             align-items:center;
-            justify-content:center;
-            height:100svh;
-            width:100%;
-            background:rgb(200,200,200);
-            color:rgb(0,0,0);
-            font-size:22px;
+            width:20%;
+            padding:150px 10svw 0px;
         }`
 
-    const a = cE("div", style)
-    a.innerHTML = "Ainda não feito"
-    return(a)
+    const contact = cE("div", style)
+    contact.id = "Contato"
+    contact.appendChild(schedule())
+    contact.appendChild(title())
+    contact.appendChild(content())
+    return(contact)
 }

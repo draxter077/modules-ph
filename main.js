@@ -184,7 +184,7 @@ cE("root", `html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquo
     body{
     	box-sizing:border-box;
     	font-family:system-ui;
-    	background:var(--colorBlack);
+    	background:var(--colorWhite);
     	cursor:default;
 	    user-select:none;
     }

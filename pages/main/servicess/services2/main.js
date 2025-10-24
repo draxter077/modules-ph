@@ -1,18 +1,22 @@
-export default function a(){
+import title from "./title/main.js"
+import info from "./info/main.js"
+
+export default function services(){
     let style = `
         {
             display:flex;
-            flex-direction:row;
-            align-items:center;
-            justify-content:center;
-            height:100svh;
-            width:100%;
-            background:rgb(200,200,200);
-            color:rgb(0,0,0);
-            font-size:22px;
-        }`
+            flex-direction:column;
+            background:rgb(210,0,230);
+            width:20%;
+            margin:20px 0px 0px 0px;
+            padding:20px 40px 40px;
+            box-shadow:0px 0px 5px 30px var(--colorBlue05);
+        }
+        :responsive{padding:10px;}`
 
-    const a = cE("div", style)
-    a.innerHTML = "Ainda não feito"
-    return(a)
+    const services = cE("div", style)
+    services.id = "services"
+    services.appendChild(title())
+    services.appendChild(info())
+    return(services)
 }

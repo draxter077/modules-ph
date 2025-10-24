@@ -9,8 +9,8 @@ export default function links(){
         }`
 
     const links = cE("div", style)
-    links.appendChild(link("Sobre", "about"))
     links.appendChild(link("Serviços", "services"))
+    links.appendChild(link("Sobre", "about"))
     links.appendChild(link("Artigos", "posts"))
     links.appendChild(link("Contato", "contact"))
     return(links)
