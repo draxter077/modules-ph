@@ -13,8 +13,8 @@ export default function contacts(){
         }`
 
     const contacts = cE("div", style)
-    contacts.appendChild(contact("https://www.ph.net.br/assets/instagram.png", "@ExclusiveDepilacao", "https://www.instagram.com/exclusivedepilacao/"))
-    contacts.appendChild(contact("https://www.ph.net.br/assets/whatsapp.png", "(41) 99838-0515", "https://wa.me/5541998380515"))
-    contacts.appendChild(contact("./assets/elements/facebook.png", "Exclusive Depilação", "https://www.facebook.com/exclusivedepilacao"))
+    contacts.appendChild(contact("https://www.ph.net.br/assets/instagram.png", userInstagram, linkInstagram))
+    contacts.appendChild(contact("https://www.ph.net.br/assets/whatsapp.png", numberWhatsapp, linkWhatsapp))
+    contacts.appendChild(contact("./assets/elements/home.png", localAddress, linkAddress))
     return(contacts)
 }

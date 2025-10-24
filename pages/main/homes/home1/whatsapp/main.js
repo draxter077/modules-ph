@@ -30,7 +30,7 @@ export default function whatsapp(){
 
     const whatsapp = cE("a", style)
     whatsapp.innerHTML = "<img src='https://ph.net.br/assets/whatsapp.png'/> Entre em contato"
-    whatsapp.href = "https://wa.me/5541999999999"
+    whatsapp.href = linkWhatsapp
     whatsapp.target = "_blank"
     return(whatsapp)
 }

@@ -1,5 +1,12 @@
 import main from "./pages/main/main.js"
 
+window.linkWhatsapp = "https://wa.me/554195014187"
+window.numberWhatsapp = "(41) 99501-4187"
+window.linkInstagram = "https://www.instagram.com/phwebsoftware"
+window.userInstagram = "@PhWebSoftware"
+window.linkAddress = "https://maps.app.goo.gl/biX4sYgH3TyNZoZd7"
+window.localAddress = "Rua Atílio Bório, 80 - Cristo Rei, Curitiba/PR"
+
 window.cE = function cE(t, stl){
     function addClass(){
         function randomName(names){
