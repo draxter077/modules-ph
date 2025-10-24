@@ -7,7 +7,7 @@ export default function posts(){
             display:flex;
             flex-direction:column;
             align-items:center;
-            width:20%;
+            width:100%;
             margin:150px 0px 0px;
         }
         :responsive{width:95%;padding:10px;}`

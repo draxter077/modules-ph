@@ -29,6 +29,6 @@ export default function foot(){
 
     const foot = cE("div", style)
     let d = new Date()
-    foot.innerHTML = `Desenvolvido por <a target='_blank' href='https://www.ph.net.br'><img src='https://www.ph.net.br/assets/logo.jpg' /></a> <span>•</span> ${window.location.href} © ${d.getFullYear()} Todos os direitos reservados`
+    foot.innerHTML = `Desenvolvido por <a target='_blank' href='https://www.ph.net.br'><img src='https://www.ph.net.br/assets/logo.jpg' /></a> <span>•</span> ${window.location.href.replace("http://","").replace("https://","").split("/")[0]} © ${d.getFullYear()} Todos os direitos reservados`
     return(foot)
 }

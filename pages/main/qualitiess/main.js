@@ -1,6 +1,6 @@
-import posts1 from "./posts1/main.js"
+import qualities1 from "./qualities1/main.js"
 
-export default function postss(){
+export default function qualitiess(){
     let style = `
         {
             display:flex;
@@ -11,7 +11,7 @@ export default function postss(){
             overflow-x:scroll;
         }`
 
-    const postss = cE("div", style)
-    postss.appendChild(posts1())
-    return(postss)
+    const qualitiess = cE("div", style)
+    qualitiess.appendChild(qualities1())
+    return(qualitiess)
 }

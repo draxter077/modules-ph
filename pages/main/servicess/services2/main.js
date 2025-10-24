@@ -7,7 +7,7 @@ export default function services(){
             display:flex;
             flex-direction:column;
             background:rgb(210,0,230);
-            width:20%;
+            width:100%;
             margin:20px 0px 0px 0px;
             padding:20px 40px 40px;
             box-shadow:0px 0px 5px 30px var(--colorBlue05);

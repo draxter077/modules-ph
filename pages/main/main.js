@@ -1,6 +1,7 @@
 import head from "./head/main.js"
 
 import homes from "./homes/main.js"
+import qualitiess from "./qualitiess/main.js"
 import abouts from "./abouts/main.js"
 import servicess from "./servicess/main.js"
 import postss from "./postss/main.js"
@@ -17,6 +18,7 @@ export default function main(){
     const main = cE("div", style)
     main.appendChild(head())
     main.appendChild(homes())
+    main.appendChild(qualitiess())
     main.appendChild(servicess())
     main.appendChild(abouts())
     main.appendChild(postss())

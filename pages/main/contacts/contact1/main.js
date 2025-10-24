@@ -8,7 +8,7 @@ export default function contact(){
             display:flex;
             flex-direction:column;
             align-items:center;
-            width:20%;
+            width:100%;
             padding:150px 10svw 0px;
         }`
 

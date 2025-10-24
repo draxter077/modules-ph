@@ -8,7 +8,7 @@ export default function home(){
             flex-direction:row;
             align-items:center;
             justify-content:center;
-            width:20%;
+            width:100%;
             background:rgb(0,200,230);
             color:rgb(0,0,0);
             font-size:22px;
